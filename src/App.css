@@ -1,43 +1,62 @@
-#pomodoro {
-  border: 1px solid red;
-  margin:  100px auto;
-  height: 500px;
-  width: 40%;
-  display: block;
+
+body {
+  color: darkgoldenrod;
+  background: #110934;
+  
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: $font;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: $background;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#clock {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
 }
 
-#title {
-  width: 100%;
+#timer {
+  border: 5px solid  #fc600a;
+  border-radius: 20px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  time {
+    font-size: 2em;
+  }
+}
+
+.setter-container {
+  padding: 10px;
+  display: flex;  
+}
+
+.setter {
+  padding: 10px;
   text-align: center;
-  height: 40px;
-  margin-top: 30px; 
+  i, span {
+    padding: 10px;    
+  }
+  span {
+    font-size: 1.5em;
+  }
 }
 
-#break-control {
-  border: 1px solid green;
-  width: 49%;
-  height: 75px;
-  float: left;
-  margin-top: 20px;
-}
-
-#break-length {
-  width: 20%;
-}
-
-#session-control {
-  border: 1px solid blue;
-  width: 49%;
-  height: 75px;
-  float: right;
-  margin-top: 20px;
-}
-
-#timer-control{
-  width: 60%;
-  clear: both;
-  border: 1px solid magenta;
-  margin-top: 40px;
-  margin: auto;
+.timerButton-container > i {
+  padding: 10px;
 }
